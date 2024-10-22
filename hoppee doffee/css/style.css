@@ -1,0 +1,160 @@
+@charset "utf-8";
+ 
+/* 작업 */
+
+/* header 작업 */
+
+header{width: 100%;height: 126px;position: fixed;z-index: 2;}
+.header_box{width: 90%;height: 100%;
+margin: 0 auto;display: flex;
+align-items: center;
+ justify-content: space-between;}
+ .bg{width: 100%;height: 30vh;background-color: #DC9D4B;
+  position: absolute;top: 0;left: 0;display: none;
+transition: 0.3s;}
+
+ .header_box>.logo{width: 240px; height: 25px;
+position: relative;}
+.logo .logo_white{position: absolute;
+top: 0;left: 0;display: none;}
+.logo:hover .logo_white{display: block;}
+.logo img{width: 100%; height: 100%;}
+
+
+.gnb{width: 610px;height: 30px;display: flex;font-size: 20px;
+font-weight: bold;justify-content: space-between;}
+.gnb>li{font-size: 20px;margin-bottom: 10px;}
+.gnb>li a:hover{border-bottom: 0.5px solid black;
+color: whitesmoke;}
+.gnb>li .submenu{display: none;}
+.gnb>li .submenu>li{margin-bottom: 10px;font-size: 15px;
+text-align: center;}
+
+.util{display: flex;width: 220px;
+justify-content: space-between;}
+
+
+.util li{width: 30px;height: 30px;
+position: relative;}
+.util li img{width: 100%;height: 100%;}
+.util li .icon{position: absolute;top: 0;left: 0;
+display: none;}
+.util li:hover .icon{display: block;}
+
+
+/* mian 작업 */
+
+main{width: 100%;height: 100vh;}
+main .main_img{width: 100%;height: 100vh;}
+main .main_img img{width: 100%;height: 100%;}
+.txt_box{position: absolute;z-index: 99;top: 25%;left: 5%;
+color: #fff;}
+.txt_box>h1{font-size: 80px;}
+.txt_box>h2{font-size: 80px;}
+.txt_box>h3{font-size: 30px;}
+
+
+/* row1작업 */
+.row1{width: 100%;height: 100vh;
+display: flex;position: relative;}
+.left_box{width: 50%;height: 100vh;position: absolute;
+top: 0;left: 0;}
+.left_box img{width: 100%;height: 100%;position: absolute;left: 100%;top: 0;}
+.left_box img:first-child{position: absolute; left: 0; top:0}
+
+.center_box{width: 340px;height: 460px;
+z-index: 900;position: absolute;top: 50%;left: 50%;
+transform: translate(-50%,-30%);}
+.center_box img{width: 100%;height: 100%;position: absolute;
+display: none;}
+.center_box img:first-child{display: block;}
+
+.right_box{width: 50%;height: 100vh;
+position: absolute;top: 0;right: 0;background-color: #F5EBE5;}
+.right_box img{width: 100%;height: 100%;position: absolute;top: 0;right: 0;}
+
+.choice_box{width: 100%px;
+z-index: 3; font-size: 40px;position: absolute;
+top: 10%;left: 0;}
+.choice_box li{cursor: pointer;display: inline-flex;
+display: flex;margin: 40px;font-size: 40px;font-weight: bold;
+color: #fff;}
+.choice_box li:hover{font-size: 45px;color: black;}
+.choice_box li:hover::after{content: "*";padding-top: 10px;}
+.choice_box li span{font-size: 50px;transition: none;}
+.row1 h3{width: 100%;position: absolute;top: 15%;left: 0;
+z-index: 3;font-size: 40px;}
+
+/* row2작업 */
+.row2{width: 100%;height: 100vh;position: relative;}
+.row2 .slogan{font-size: 80px;position: absolute;
+top: 50%;left: 50%;transform: translate(-50%,-80%);
+width: 80%;
+text-align: center;
+}
+
+.row2 .character_img{position: absolute;
+top: 50%;left: 50%;transform: translate(-50%,-10%);
+width: 750px;height: 350px;}
+.row2 .character_img img{width: 100%;height: 100%;}
+.row2 .explain{width: 100%;font-size: 35px;
+  position: absolute;bottom: 5px;
+left: 0;border-top: 5px solid black;
+border-bottom: 5px solid black;white-space: nowrap;
+overflow: hidden;}
+.swiper_top .txt01{width: 100%;}
+.swiper-wrapper{transition-timing-function: linear;}
+
+
+/* row3작업 */
+.row3{width: 100%;height: 100vh;}
+.row3_box{width: 60%;display: flex;
+margin: 0 auto;
+justify-content: space-between;
+padding-top: 200px;}
+.row3_left_box{width: 50%;height: 100%;
+
+line-height: 1.2;}
+.row3_left_box h2{font-size: 70px;}
+.row3_left_box li p{font-size: 30px;padding-top: 30px;font-weight: bold;}
+.row3_right_box{width: 50%;height: 100%;
+position: relative;}
+.coffee_img{width: 100%;}
+.dessert_img{width: 200px;height: 200px;
+position: absolute;right: -5%;
+bottom: -20%;}
+.dessert_img img{width: 100%;height: 100%;
+    border-radius: 50%;}
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-pagination-bullet{background: white;}
+
+
+/* footer작업 */
+footer{width: 100%;background-color:black}
+.footer_box{width: 80%;height: 130px;
+margin: 0 auto;
+display: flex;
+}
+.footer_box p{margin-top: 15px;margin-right: 200px;color: #fff;}
+.footer_box p span{color: white;}
+.footer_box p a:hover{font-weight: bold;}
+.footer_box .effect{width: 400px;}
