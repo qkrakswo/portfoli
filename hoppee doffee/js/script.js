@@ -63,7 +63,7 @@ $(document).ready(function(){
             x:-1500,opacity:0,
             scrollTrigger:{
             trigger:".row2",
-            markers:true,
+            // markers:true,
             start:"-20% 50%",
             end:"30% 50%",
             scrub:true,
@@ -73,7 +73,7 @@ $(document).ready(function(){
             x:-1500,opacity:0,
             scrollTrigger:{
             trigger:".row2",
-            markers:true,
+            // markers:true,
             start:"0% 50%",
             end:"50% 50%",
             scrub:true,

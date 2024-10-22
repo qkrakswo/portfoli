@@ -120,7 +120,7 @@ $(document).ready(function(){
             y:200,autoAlpha:0,
             scrollTrigger:{
               trigger:".row2",
-              // markers:true,
+              markers:true,
               start:"20% center",
               end:"80% 100%",
               scrub:true
