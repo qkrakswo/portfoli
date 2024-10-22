@@ -1,8 +1,16 @@
 $(document).ready(function(){
     
-$(".img_box").on("click",function(){
-    event.preventDefault();
-    $(this).parent().siblings(".view").stop().fadeIn()
+$(".box_01").on("click",function(){
+    $(this).siblings(".view01").stop().fadeIn()
+})
+$(".box_02").on("click",function(){
+    $(this).siblings(".view02").stop().fadeIn()
+})
+$(".box_03").on("click",function(){
+    $(this).siblings(".view03").stop().fadeIn()
+})
+$(".box_04").on("click",function(){
+    $(this).siblings(".view04").stop().fadeIn()
 })
 $(".viewX").on("click",function(){
     $(".view").fadeOut()
