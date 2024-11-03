@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하나투어 웹쿨론 코딩</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top_wrap">
+            <div class="h_top">
+                <div class="top_left">
+                    <h1><a href="#">컨텐츠월드(주)</a></h1>
+                    <p class="call">1644-3881</p>
+                    <p class="talk">톡상담</p>
+                </div>
+                <div class="top_right">
+                    <img src="./image/ci_text.png">
+                </div>
+            </div><!--h_top-->
+        </div><!--top_wrap-->
+        <div class="middle_wrap">
+            <div class="h_middle">
+                <div class="middle_left">
+                    <div class="logo">
+                        <img src="./image/ico-hanatour-logo2.png">
+                    </div>
+                    <div class="input_box">
+                        <input type="search"placeholder="검색어를 입력해 주세요">
+                        <div class="button">
+                            <img src="./image/ico-search.png">
+                        </div>
+                    </div>
+                    <div class="list_box">
+                        <p>HOT</p>
+                        <p>스페인</p>
+                    </div>
+                </div>
+                <div class="middle_right">
+                    <ul class="login_box">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#"><img src="./image/ico-mymenu.png"></a></li>
+                        <li><a href="#">마이메뉴</a></li>
+                    </ul>
+                    <ul class="signup_box">
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#"><img src="./image/ico-reservationhistory.png"></a></li>
+                        <li><a href="#">예약내역</a></li>
+                    </ul>
+                    <ul class="c_svc_box">
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#"><img src="./image/ico-haeder-choice.png"></a></li>
+                        <li><a href="#">찜</a></li>
+                    </ul>
+                </div>
+            </div><!--h_middle-->
+        </div><!--middle_wrap-->
+        <div class="bottom_wrap">
+            <div class="h_bottom">
+                <div class="btn_wrap">
+                    <div class="btn_button">
+                        <img src="./image/ico-hamburgermenu.png">
+                        <span>전체메뉴</span>
+                    </div>
+                    <ul class="nav">
+                        <li><a href="#">해외여행</a></li>
+                        <li><a href="#">항공</a></li>
+                        <li><a href="#">호텔</a></li>
+                        <li><a href="#">국내여행</a></li>
+                        <li><a href="#">테마여행</a></li>
+                    </ul>
+                </div><!--btn_wrap-->
+                <div class="news_box">
+                    <span>여행기획전</span>
+                    <span>이단의 혜택</span>
+                </div>
+            </div><!--h_bottom-->
+        </div><!--bottom_wrap-->
+    </header><!--header끝-->
+
+    <main>
+        <div class="slide_wrap">
+            <div class="con">
+                <div class="slide slide1"></div>
+                <div class="slide slide2"></div>
+                <div class="slide slide3"></div>
+                <div class="slide slide4"></div>
+            </div>
+        </div>
+        
+
+        <div class="main_content">
+            <div class="main_left">
+                <p>고객님,<br><span>어떤 여행을 꿈구시나요?</span></p>
+                <ul class="choice_wrap">
+                    <li>패키지</li>
+                    <li>항공</li>
+                    <li>호텔</li>
+                </ul>
+                <div class="switch_wrap">
+                    <div class="switch_box">
+                        <input type="text"placeholder="어디로 떠나세요?" class="destination">
+                        <div class="departure">
+                            <div class="d_block">
+                                출발지 전체
+                            </div>
+                            <ul class="d_pop">
+                                <li><a href="#">전체</a></li>
+                                <li><a href="#">인천/김포</a></li>
+                                <li><a href="#">부산</a></li>
+                                <li><a href="#">대구</a></li>
+                                <li><a href="#">청주</a></li>
+                                <li><a href="#">광주(무안)</a></li>
+                                <li><a href="#">제주</a></li>
+                                <li><a href="#">양양</a></li>
+                            </ul>
+                        </div><!--departure-->
+                        <div class="calender_box">
+                            <input type="text" id="datepicker" placeholder="여행시작일 선택">
+                        </div><!--calender_box-->
+                        <div class="option_box">
+                            <div class="option_left">
+                                <img src="./image/air_icon.png">
+                               <p>항공권은<br>있어요</p>
+                            </div>
+                            <div class="option_right">
+                                <img src="./image/person_icon.png">
+                                <p>우리끼리만<br>여행할래요</p>
+                            </div>
+                        </div><!--option_box-->
+                        <div class="search_box">
+                            패키지 검색
+                        </div>
+                    </div><!--switch_box-->
+    
+                    <div class="switch_box02">
+                        <div class="box02_wrap01">
+                            <div>왕복</div>
+                            <div>편도</div>
+                            <div>다구간</div>
+                        </div>
+                        <div class="box02_wrap02">
+                            <div>SEL 인천/김포</div>
+                            <img src="./image/arrow.png">
+                            <div>도착지</div>
+                        </div>
+                        <div class="box02_wrap03">
+                            <input type="text" class="calender_box02" placeholder="00.00">
+                            <input type="text" class="calender_box02" placeholder="00.00">
+                        </div>
+                        <div class="box02_wrap04">
+                            <div class="seat">성인 1명 * 일반석</div>
+                            <div class="one_way">직항</div>
+                        </div>
+                        <div class="search_box">
+                            패키지 검색
+                        </div>
+                    </div><!--switch_box02-->
+                    <div class="switch_box03">
+                        <input type="text"placeholder="어디로 떠나세요?" class="destination">
+                        <div class="box03_wrap02">
+                            <input type="text" class="calender_box03" placeholder="2024.00.00">
+                        </div>
+                        <input type="text" class="box03_wrap03" placeholder="객실1 * 성인2명">
+                        <div class="search_box">
+                            숙소 검색
+                        </div>
+                    </div><!--switch_box03-->
+                </div>
+                
+                
+            </div>
+            <div class="main_right">
+                <div class="swiper mySwiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./image/main_banner_01.JPG"></div>
+                        <div class="swiper-slide"><img src="./image/main_banner_02.JPG"></div>
+                        <div class="swiper-slide"><img src="./image/main_banner_03.JPG"></div>
+                        <div class="swiper-slide"><img src="./image/main_banner_04.JPG"></div>
+                     </div>
+                </div>
+            </div><!--main_right-->
+        </div><!--main_content-->
+    </main><!--main-->
+    <div class="sub_content">
+        <div class="sub_title">
+            <h2>💜하나국제여행제 한정특가💜</h2>
+            엄선된 138개의 우수 수상상품을 만나보세요!
+        </div>
+        <div class="content_wrap">
+            <div class="box">
+                <img src="./image/row01-01.jpg">
+                <h3>[하나국제여행제] 장가계/원가계 4~7일</h3>
+                <span>풍경구 베스트셀러</span>
+                <div class="price">
+                    439,000<span>원~</span>
+                </div>
+                <div class="tag_wrap">
+                    <span>천문산케이블카🚠</span>
+                    <span>핫플레이스 72기루</span>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./image/row01-02.jpeg">
+                <h3>[하나국제여행제] 오사카/쿄토 3일</h3>
+                <span>교토의 옛 정취를 따라걷기</span>
+                <div class="price">
+                    579,900<span>원~</span>
+                </div>
+                <div class="tag_wrap">
+                    <span>교토산책</span>
+                    <span>금각사👑</span>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./image/row01-03.jpg">
+                <h3>[하나국제여행제] 괌 에어텔 4~6일</h3>
+                <span>전일성 호텔식 올인클루시브!</span>
+                <div class="price">
+                    649,000<span>원~</span>
+                </div>
+                <div class="tag_wrap">
+                    <span>항공+호텔</span>
+                    <span>괌 공항 왕복셔틀🚍</span>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./image/row01-04.jpg">
+                <h3>[하나국제여행제] 대만/야류/지우펀/우라이</h3>
+                <span>천혜의 자연</span>
+                <div class="price">
+                    861,900<span>원~</span>
+                </div>
+                <div class="tag_wrap">
+                    <span>101타워🗼</span>
+                    <span>우라이 케이블카🚡</span>
+                </div>
+            </div>
+        </div><!--content_wrap-->
+    </div><!--sub_content-->
+
+    <div class="sub_content">
+        <div class="sub_title">
+            <h2>💜하나국제여행제 한정특가💜</h2>
+            우수 수상상품과 함께 보는 초청여행지_홍콩/상해
+        </div>
+        <div class="content_wrap">
+            <div class="box">
+                <img src="./image/row02-01.jpg">
+                <h3>[하나국제여행제] 상해/주가각 4일</h3>
+                <span>상해 핫해</span>
+                <div class="price">
+                    299,000<span>원~</span>
+                </div>
+                <div class="tag_wrap">
+                    <span>자유일정 포함</span>
+                    <span>🚫노쇼핑</span>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./image/row02-02.jpg">
+                <h3>[하나국제여행제] 홍콩/마카오 3~4일</h3>
+                <span>찐홍콩 감성 가득</span>
+                <div class="price">
+                    679,000<span>원~</span>
+                </div>
+                <div class="tag_wrap">
+                    <span>홍콩섬 센트럴&소호🌇</span>
+                    <span>시내호텔</span>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./image/row02-03.jpg">
+                <h3>[하나국제여행제] 나트랑/달랏 5~6일</h3>
+                <span>잘 먹고 잘 쉬는</span>
+                <div class="price">
+                    879,000<span>원~</span>
+                </div>
+                <div class="tag_wrap">
+                    <span>1일1간식🧁</span>
+                    <span>미식여행🍱</span>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./image/row02-04.jpg">
+                <h3>[하나국제여행제] 튀르키예(터키) 일주</h3>
+                <span>동서양의 매력</span>
+                <div class="price">
+                    2,619,000<span>원~</span>
+                </div>
+                <div class="tag_wrap">
+                    <span>국내선 2회</span>
+                    <span>해안절벽 레스토랑👩‍🍳</span>
+                </div>
+            </div>
+        </div><!--content_wrap0-->
+    </div><!--sub_content02-->
+
+    <div class="commercial_bar">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./image/row03-01.jpg"></div>
+              <div class="swiper-slide"><img src="./image/row03-02.jpg"></div>
+            </div>
+        </div>
+    </div><!--commercial_bar-->
+
+    <div class="row4">
+        <div class="fixed_box">
+            <div class="fixed_wrap">
+                <div class="strong_txt">
+                    내게 남은<br>
+                    연차가 있다면<br>
+                    지금바로클릭👆
+                </div>
+             <div class="conWarp">
+                <div class="choice_txt01 con">연차 부자의 장거리 플렉스✨</div>
+                <div class="choice_txt02 con">연차 3~4개면 여유있게🙌 중거리</div>
+                <div class="choice_txt03 con">소중한 연차1~2개로 떠나는 해외</div>
+                <div class="choice_txt04 con">소중한 연차1~2개로 떠나는 국내</div>
+            </div><!--conWarp-->
+            </div>
+        </div><!--fixed_box-->
+        <div class="change_wrap">
+            <div class="change_box num01">
+                <div>
+                    <img src="./image/row04-01-01.jpg">
+                    <p>패키지</p>
+                    <p>두바이/아부다비 5~7일</p>
+                    <p>#도우디너 크루즈 #에티하드타워 전망대</p>
+                    <p>1,199,000<span>원~</span></p>
+                </div>
+                <div>
+                    <img src="./image/row04-01-02.jpg">
+                    <p>패키지</p>
+                    <p>튀르키예(터키) 일주 8~10일</p>
+                    <p>#터키국내선1회 #현지특식6회</p>
+                    <p>1,599,000<span>원~</span></p>
+                </div>
+                <div>
+                    <img src="./image/row04-01-03.jpg">
+                    <p>패키지</p>
+                    <p>서유럽 4국 8~10일</p>
+                    <p>#이탈리아 남부여행 #스위스 리기산 산악열차</p>
+                    <p>2,899,000<span>원~</span></p>
+                </div>
+            </div><!--num01-->
+            <div class="change_box num02">
+                <div>
+                    <img src="./image/row04-02-01.jpg">
+                    <p>패키지</p>
+                    <p>코타키나발루 5~6일</p>
+                    <p>#준특급리조트 #가격이혜택</p>
+                    <p>199,000<span>원~</span></p>
+                </div>
+                <div>
+                    <img src="./image/row04-02-02.jpg">
+                    <p>패키지</p>
+                    <p>보홀 4~5일</p>
+                    <p>#인피니티풀#커플여향</p>
+                    <p>539,000<span>원~</span></p>
+                </div>
+                <div>
+                    <img src="./image/row04-02-03.jpg">
+                    <p>패키지</p>
+                    <p>사이판 자유여행 4~5일</p>
+                    <p>#월드리조트 #최대워터파크</p>
+                    <p>674,000<span>원~</span></p>
+                </div>
+            </div><!--num02-->
+            <div class="change_box num03">
+                <div>
+                    <img src="./image/row04-03-03.jpg">
+                    <p>패키지</p>
+                    <p>오사카 자유여행3~4일</p>
+                    <p>#시내중심 비즈니스급호텔</p>
+                    <p>399,900<span>원~</span></p>
+                </div>
+                <div>
+                    <img src="./image/row04-03-02.jpg">
+                    <p>패키지</p>
+                    <p>대만 4~5일</p>
+                    <p>#초특가 #가성비</p>
+                    <p>423,500<span>원~</span></p>
+                </div>
+                <div>
+                    <img src="./image/row04-03-03.jpg">
+                    <p>패키지</p>
+                    <p>훗카이도 4일</p>
+                    <p>#인기온천호텔 #미식여행</p>
+                    <p>961,000<span>원~</span></p>
+                </div>
+            </div><!--num03-->
+            <div class="change_box num04">
+                <div>
+                    <img src="./image/row04-04-01.jpg">
+                    <p>패키지</p>
+                    <p>흑산도/홍도 2일</p>
+                    <p>#흑산문화관광호텔1박</p>
+                    <p>285,000<span>원~</span></p>
+                </div>
+                <div>
+                    <img src="./image/row04-04-02.jpg">
+                    <p>패키지</p>
+                    <p>[스테디셀러] 제주</p>
+                    <p>#우도단독버스 투어</p>
+                    <p>349,000<span>원~</span></p>
+                </div>
+                <div>
+                    <img src="./image/row04-04-03.jpg">
+                    <p>패키지</p>
+                    <p>[강릉항/목포항/독도포함] 울릉도 3일</p>
+                    <p>#육로관광A,B코스</p>
+                    <p>404,000<span>원~</span></p>
+                </div>
+            </div><!--num04-->
+        </div><!--change_wrap-->
+    </div><!--row4-->
+
+    <div class="row5">
+        <div class="swiper mySwiper_row5">
+            <div class="row5_topic">
+                고객님만을 위한 추천여행
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="row5_imgbox">
+                        <img src="./image/row5-01.jpg">
+                    </div>
+                    <div class="row5_txt">
+                        <p>패키지</p>
+                        <p>보홀5일 #하나국제여행제 # 헤난알로나비치 #돌핀왓칭
+                            #호핑투어 #전신마사...
+                        </p>
+                        <p>849,000<span>원</span></p>
+                    </div>
+                </div><!--slide-->
+                <div class="swiper-slide">
+                    <div class="row5_imgbox">
+                        <img src="./image/row5-02.jpg">
+                    </div>
+                    <div class="row5_txt">
+                        <p>패키지</p>
+                        <p>하와이 7일 #와이키키리조트 #시티뷰 #1일
+                            관광 #체크인전알찬일정 #인생포...
+                        </p>
+                        <p>2,369,000<span>원</span></p>
+                    </div>
+                </div><!--slide-->
+                <div class="swiper-slide">
+                    <div class="row5_imgbox">
+                        <img src="./image/row5-03.jpg">
+                    </div>
+                    <div class="row5_txt">
+                        <p>패키지</p>
+                        <p>푸꾸옥 3박 5일 #빈펄리조트 #디럭스룸 #
+                            성일4명 풀빌라UP #빈원더스&사파리...
+                        </p>
+                        <p>1,429,000<span>원</span></p>
+                    </div>
+                </div><!--slide-->
+                <div class="swiper-slide">
+                    <div class="row5_imgbox">
+                        <img src="./image/row5-04.jpg">
+                    </div>
+                    <div class="row5_txt">
+                        <p>패키지</p>
+                        <p>[하나국제야행제] 다낭 5일 #베이캐피탈 #
+                            신규오픈5성 #바나힐 테마파크 #호...
+                        </p>
+                        <p>719,000<span>원</span></p>
+                    </div>
+                </div><!--slide-->
+                <div class="swiper-slide">
+                    <div class="row5_imgbox">
+                        <img src="./image/row5-05.png">
+                    </div>
+                    <div class="row5_txt">
+                        <p>패키지</p>
+                        <p>[출발확정] 그리스와 튀르키예(터키) 일주 1
+                            0일 #항공이동1회 #5성급호텔 6박...
+                        </p>
+                        <p>849,000<span>원</span></p>
+                    </div>
+                </div><!--slide-->
+                <div class="swiper-slide">
+                    <div class="row5_imgbox">
+                        <img src="./image/row5-06.jpg">
+                    </div>
+                    <div class="row5_txt">
+                        <p>패키지</p>
+                        <p>보홀5일 #하나국제여행제 # 헤난알로나비치 #돌핀왓칭
+                            #호핑투어 #전신마사...
+                        </p>
+                        <p>849,000<span>원</span></p>
+                    </div>
+                </div><!--slide-->
+            </div><!--wrapper-->
+            <div class="swiper-button-next"><img src="./image/ico-arrow-right.png"></div>
+            <div class="swiper-button-prev"><img src="./image/ico-arrow-left.png"></div>
+          </div>
+    </div><!--row5-->
+
+    <div class="row6">
+        <div class="swiper mySwiper_row6">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row6_subwrap">
+                    <div class="sub_left">
+                        <a href="#"><img src="./image/row6_main_bg01.jpg"></a>
+                    </div>
+                    <div class="sub_right">
+                        <p class="sub_txt01">스리랑카 & 몰디브</p>
+                        <p class="sub_txt02">이색적인 매력의 향연</p>
+                        <p class="sub_txt03">
+                            스리랑카&몰디브 매력 포인트<br>
+                            v신비로운 문화유산 탐방의 스리랑카<br>
+                            v허니문이 아니어도 좋아~! 가볍게 떠나는 몰디브
+                        </p>
+                        <p class="sub_txt04">
+                            두나라 여행 어떻게 할까<br>
+                            v스리랑카+몰디브의 이색조합!<br>
+                            v스리랑카 vs 몰디브 한나라여행 골라보기 ▼▼▼
+                        </p>
+                        <div class="mini_img">
+                            <a><img src="./image/row6_sub_bg01.jpg"></a>
+                            <div class="mini_txtbox">
+                                <p>향긋한 홍차 향기와 반짝이는 인도양의 나라</p>
+                                <p>스리랑카 8일 #베스트셀러</p>
+                                <p>2,809,900<span>원</span></p>
+                            </div> 
+                        </div>
+                        <div class="mini_img">
+                            <a><img src="./image/row6_sub_bg02.jpg"></a>
+                            <div class="mini_txtbox">
+                                <p>아름다운 라군과 수중환경</p>
+                                <p>몰디브 7일 #가족/커플여행 추천</p>
+                                <p>3,289,900<span>원</span></p>
+                            </div>
+                        </div>
+                    </div><!--sub_right-->
+                </div><!--row6_subwrap slide 01-->
+              </div><!--swiper-slide01-->
+
+              <div class="swiper-slide">
+                <div class="row6_subwrap">
+                    <div class="sub_left">
+                        <a href="#"><img src="./image/row6_main_bg02.jpg"></a>
+                    </div>
+                    <div class="sub_right">
+                        <p class="sub_txt01">정통 크루즈 여행</p>
+                        <p class="sub_txt02">부산 출도착 크루즈!</p>
+                        <p class="sub_txt03">
+                            v가까운 곳에서 떠나는 크루즈<br>
+                            v이탈리안 정통 크루즈<br>
+                            v오키나와/이시가키 크루즈6일_25/01/29
+                        </p>
+                        <p class="sub_txt04">
+                            v두나라 여행 어떻게 할까<br>
+                            v겨울 눈축제로 가는 길, 로멘틱 오타루<br>
+                            v하코다테/오타루 크루즈7일_25/02/03
+                        </p>
+                        <div class="mini_img">
+                            <a><img src="./image/row6_sub_bg03.jpg"></a>
+                            <div class="mini_txtbox">
+                                <p>#코스타 세레나호 #100%출발확정</p>
+                                <p>[1/29 출발] 살맞이 오키나와 크루즈 6일</p>
+                                <p>1,740,000<span>원</span></p>
+                            </div> 
+                        </div>
+                        <div class="mini_img">
+                            <a><img src="./image/row6_sub_bg04.jpg"></a>
+                            <div class="mini_txtbox">
+                                <p>#코스타 레레나호 #100%출발확정</p>
+                                <p>[2/3 출빌] 훗카이도 눈축제 크루즈 7일</p>
+                                <p>1,840,000<span>원</span></p>
+                            </div>
+                        </div>
+                    </div><!--sub_right-->
+                </div><!--row6_subwrap slide 02-->
+              </div><!--swiper-slide02-->
+
+            </div><!--swiper-wrapper-->
+            <div class="swiper-pagination"></div>
+        </div><!--swiper mySwiper_row6-->
+    </div><!--row6-->
+
+    <div class="row7">
+        <div class="row7_content">
+            <p>내나라 구구석</p>
+            <div class="circle_wrap">
+                <div class="circle_content">
+                    <a><img src="./image/row07-01.jpg"></a>
+                    <p>언제 가도 좋은 제주도</p>
+                    <p>
+                        패키지쿠터 자유여행까지!<br>
+                        가을이라 더 떠나기 좋은 제주 여행🍂
+                    </p>
+                </div><!--circle_content01-->
+                <div class="circle_content">
+                    <a><img src="./image/row07-02.jpg"></a>
+                    <p>아름다운 신비의 섬, 울릉도</p>
+                    <p>
+                        푸른 바다와 자연 풍경이 넘치는<br>
+                        모두의 버킷리스트 여행지 울릉도!
+                    </p>
+                </div><!--circle_content02-->
+                <div class="circle_content point">
+                    <a><img src="./image/row07-03.jpg"></a>
+                    <p>일달의 국내여행</p>
+                    <p>
+                        럭셔리 여행✨<br>
+                        #특급호텔#ALL포함#내나라여행
+                    </p>
+                    <div>추천</div>
+                </div><!--circle_content03-->
+                <div class="circle_content">
+                    <a><img src="./image/row07-04.jpg"></a>
+                    <p>이유 있는 선택, 내나라 여행</p>
+                    <p>
+                        2007년 시작, 연간 1만명의<br>
+                        고객이 선택한 고품격 국내여행🏆
+                    </p>
+                </div><!--circle_content04-->
+                <div class="circle_content">
+                    <a><img src="./image/row07-05.jpg"></a>
+                    <p>가까운 국내 단풍 여행</p>
+                    <p>
+                        내장산, 설악산 오색 단풍 감상하고<br>
+                        가을을 만끽하러 떠나요🍂
+                    </p>
+                </div><!--circle_content05-->
+            </div>
+        </div>
+    </div><!--row7-->
+
+    <div class="row8">
+        <h2>2024 전지구적여행페스타</h2>
+        <div class="row8_wrap">
+            <div class="row8_left">
+                <div class="video">
+                    <img src="./image/row08_left_img.webp">
+                </div>
+                <p class="title">전지구적여행페스타가</p>
+                <p class="explain">
+                    🏆하나국제여행제🏆의 이름으로 돌아왔습니다!<br>
+                    24.10.14~12.01 총 7주간의 여정<br>
+                    오직 하나투어에서만 볼 수 있는 특별한 여행제 
+                </p>
+                <p class="txt_arrow">당신을 초대합니다💌</p>
+            </div><!--row8_left-->
+            <div class="row8_center">
+                <p class="title">역대급 혜택 대개봉</p>
+                <p class="explain">
+                    #여행상품 최대 60% 할인!<br>
+                    #총 53만원의 쿠폰팩과 최대 30만원 카드할인!<br>
+                    #하나투어 마일리지 최대 트리플 적립 찬스까지! 
+                </p>
+                <p class="txt_arrow">두구두구 혜택 대개봉 보러가기👀></p>
+            </div>
+            <div class="row8_right">
+                <div>
+                    <img src="./image/row08_right_img.jpg">
+                </div>
+                <p class="title">하나국제여행제 이용백서</p>
+                <p class="explain">
+                    신규회원 가입시 마일리지 즉시 당첨!<br>
+                    1천만원 세계여행🌍 이벤트 절찬리 진행중!<br>
+                    해외 호텔 할인 쿠폰 UP TO 90% OFF
+                </p>
+                <p class="txt_arrow">하나국제여행제 100% 즐기기></p>
+            </div>
+        </div>
+    </div><!--row8-->
+
+    <div class="row9">
+        <h2>하나국제여행제 💜 초특급 여행 혜택 대개봉!</h2>
+        <div class="row9_wrap">
+            <div>
+                <img src="./image/row09-01.jpg">
+                <p>삼성카드</p>
+                <p>하나국제여행제 결제혜택 대개봉!</p>
+            </div>
+            <div>
+                <img src="./image/row09-02.jpg">
+                <p>하나카드</p>
+                <p>하나국제여행제 결제혜택 대개봉!</p>
+            </div>
+            <div>
+                <img src="./image/row09-03.jpg">
+                <p>하나투어 x 삼성카드 제휴카드</p>
+                <p>최대 336,000원 할인</p>
+            </div>
+            <div>
+                <img src="./image/row09-04.jpg">
+                <p>4대 면세 쇼핑 혜택</p>
+                <p>롯데/신라/신세계/현대백화점</p>
+            </div>
+        </div>
+    </div><!--row9-->
+
+    <div class="row10">
+        <div class="row10_wrap">
+            <div>
+                <img src="./image/ic_custom.png">
+                <p>하나투어상품권</p>
+            </div>
+            <div>
+                <img src="./image/ic_mileage.png">
+                <p>마일리지클럽</p>
+            </div>
+            <div>
+                <img src="./image/ic_safetyjoy.png">
+                <p>SAFETY&JOY</p>
+            </div>
+            <div>
+                <img src="./image/ic_hanalive.png">
+                <p>하나LIVE</p>
+            </div>
+            <div>
+                <img src="./image/ic_zeus.png">
+                <p>제우스</p>
+            </div>
+            <div>
+                <img src="./image/ic_custom.png">
+                <p>맞춤여행</p>
+            </div>
+            <div>
+                <img src="./image/ic_group.png">
+                <p>하나트래비즈</p>
+            </div>
+            <div>
+                <img src="./image/ic_itc.png">
+                <p>외국인여행</p>
+            </div>
+            <div>
+                <img src="./image/ic_event.png">
+                <p>이벤트</p>
+            </div>
+        </div>
+    </div><!--row10-->
+    
+    <div class="row11">
+        <div class="row11_wrap">
+            <div class="row11_box01">
+                <p class="tit">
+                    하나투어닷컴<br>
+                    고객센터
+                </p>
+                <p class="tel">1577-1233</p>
+                <p class="arrow">자주 찾는 질문 ></p>
+                <p class="arrow">ARS상담번호 안내 ></p>
+            </div>
+            <div class="row11_box02">
+                <ul class="box02_txt01">
+                    <li>해외여행 문의</li>
+                    <li>평일/주말 : 09 : 00~20 : 00</li>
+                </ul>
+                <ul class="box02_txt02">
+                    <li>해외항공권 문의</li>
+                    <li>1899-1833</li>
+                    <li>평일 : 09:00~17:00</li>
+                    <li>점심시간 12:00~13:00</li>
+                </ul>
+            </div>
+            <div class="row11_box03">
+                <ul class="box03_txt01">
+                    <li>국내여행 문의</li>
+                    <li>평일/주말 : 09:00~18:00</li>
+                </ul>
+                <ul class="box03_txt02">
+                    <li>국내항공/국내숙박 문의</li>
+                    <li>평일 : 09:00~18:00</li>
+                    <li>(점심시간 : 12:00~13:00)</li>
+                    <li>주말 : 10:00~16:00</li>
+                    <li>공휴일 : 10:00~14:00</li>
+                    <li>*주말/공휴일은 긴급 상담만 가능(업무처리 불가)</li>
+                </ul>
+                <ul class="box03_txt03">
+                    <li>기업출장/교육여행 단체문의</li>
+                    <li>평일 : 09:00~18:00</li>
+                </ul>
+            </div>
+            <div class="row11_box04">
+                <ul class="box04_txt01">
+                    <li>상담번호 안내</li>
+                    <li>1번 예약상담 및 조회</li>
+                    <li>2번 마일리지, 제휴카드, 상품권 및 기타문의</li>
+                </ul>
+                <p>외국인한국여행 전용상담 02-398-6600</p>
+                <p>법인고객 전용상담 1566-0072</p>
+                <p>안심카드결제 ARS 1577-0015</p>
+                <span class="button_box">카드/제휴혜택</span>
+            </div>
+        </div><!--row11_wrap-->
+    </div><!--row11고객센터-->
+
+    <div class="row12">
+        <img src="./image/row12_bg.png">
+    </div>
+
+    <div class="sns_line">
+        <div class="sns_wrap">
+            <div class="wrap_left">
+                <p>공지</p>
+                <p>[여행만보] 24년 11월 미션 변동 사항 안내</p>
+                <p>더보기</p>
+            </div>
+            <ul class="wrap_right">
+                <li><img src="./image/facebook.png"></li>
+                <li><img src="./image/instagram.png"></li>
+                <li><img src="./image/naverblog.png"></li>
+                <li><img src="./image/kakaoplus.png"></li>
+                <li><img src="./image/youtube.png"></li>
+                <li><img src="./image/kakaostory.png"></li>
+            </ul>
+        </div>
+    </div><!--sns_line-->
+
+    <footer>
+        <div class="footer_left">
+            <ul class="f_line01">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">여행약관</a></li>
+                <li><a href="#">해외여행자보험</a></li>
+                <li><a href="#">마케팅제휴</a></li>
+                <li><a href="#">공식인증예약센터 검색</a></li>
+            </ul><!--f_line01-->
+            <ul class="f_line02">
+                <li><a href="#">(주)하나투어</a></li>
+                <li><a href="#">대표 : 송미선</a></li>
+                <li><a href="#">주소:(03161) 서울특별시 종로구 인사동 5길 41</a></li>
+            </ul><!--f_line02-->
+            <ul class="f_line03">
+                <li><a href="#">사업자등록번호 : 102-81-39440</a></li>
+                <li><a href="#">사업자정보확인</a></li>
+                <li><a href="#">통신판매업신고번호 : 종로01-1806호</a></li>
+                <li><a href="#">관광사업자 등록번호 : 제1993-000006</a></li>
+                <li><a href="#">등록관청 : 서울특별시 종로구청</a></li>
+            </ul><!--f_line03-->
+            <ul class="f_line04">
+                <li><a href="#">개인정보 보호책임자 : 전준형</a></li>
+                <li><a href="#">영업보증공제 15억 1천만원가입|기획여행보증공제 7억원 가입</a></li>
+                <li><a href="#">팩스:02-734-0392</a></li>
+                <li><a href="#">이메일:15771233@hanatour.com</a></li>
+            </ul><!--f_line04-->
+            <div class="f_line05">
+                <span><img src="./image/ico-callcenter.png">고객센터</span>
+                <span>1577-1233</span>
+                <span><img src="./image/ico-callcenter.png">해외항공권문의</span>
+                <span>1899-1833</span>
+            </div><!--f_line05-->
+            <div class="guide_txt">
+                <p>
+                    ※ 부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.<br>
+                    ※ 하나투어는 개별 항공권 및 일부 여행 상품에 대하여 통신판매중개자의 지위를 가지며, 해당 상품의 정보 및 거래 등에 관한 책임은 판매자이게 있습니다.<br>
+                    ※ 예금주 하나투어가 아닌 계좌(개인,대리점 등)로 입금하실 경우 당사에 대한 유효한 지급이 아니며, 당사는 책임지지 않습니다.<br>
+                    ※ 히니투어 가상 계좌가 아닌 다른 계좌(개인,대리점 등)에 대한 입금 유도가 있는 경우, 반드시 입금전에 하나투어 고객센터로 문의/신고 하여 주시기 바랍니다.
+                </p>
+                <p>COPYRIGHTⓒ HANATOUR SERVICE INC. ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+        <div class="footer_right">
+            <p>하나은행 구매안전 서비스</p>
+            <p>
+                고객님은 안전거래를 위해 현금으로 결제시<br>
+                (주)하나투어에서 가입한 하나은행으로<br>
+                구매안전서비스를 이용할 수 있습니다.
+            </p>
+            <p>서비스 가입사실 확인</p>
+        </div>
+    </footer>
+    <div class="logo_line">
+        <img src="./image/footer_bg.png">
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+@charset "utf-8";
+body{width: 100%;}
+header{width: 100%}
+.top_wrap{width: 100%;border-bottom: 1px solid #ddd;}
+.h_top{width: 1200px;display: flex;justify-content: space-between;height: 48px;
+padding-top: 18px;margin: 0 auto;}
+.top_left{display: flex;line-height: 44px;}
+.top_left>h1{margin-right: 16px;letter-spacing: -2px;font-size: 26px;}
+.call{width: 136px;height: 40px;background-color: black;
+color: #fff;line-height: 40px;text-align: center;
+font-weight: bold;border-radius: 20px;padding-left: 10px;margin-right: 8px;
+background-image: url(../image/ico_tel.png);
+background-repeat: no-repeat;background-position: 15px 50%;}
+.talk{width: 96.5px;height: 40px;background-color: #fde103;
+text-align: center;line-height: 40px;border-radius: 20px;
+background-image: url(../image/ico_talk.png);padding-left: 15px;
+background-repeat: no-repeat;background-position: 15px 50%;}
+.top_right{line-height:66px;}
+
+.middle_wrap{width: 100%;border-bottom: 1px solid #ddd;height: 112px;}
+.h_middle{display: flex;justify-content: space-between;
+    width: 1200px;margin: 0 auto;align-items: center;}
+.middle_left{display: flex;width: 790px;height: 45px;
+align-items: center;justify-content: space-between;margin-top: 40px;}
+.logo{width: 150px;height: 36px;}
+.input_box{width: 406px;height: 40px;border: 2px solid black;
+display: flex;margin-left: 30px;border-radius: 20px;justify-content: center;
+}
+.input_box>input{width: 334px;height: 40px;border: none;}
+.button{width: 40px;height: 40px;}
+.button>img{margin-left: 11px;margin-top: 11px;}
+.list_box{width: 160px;height: 25px;
+display: flex;align-items: center;}
+.list_box>p:nth-child(1){width: 34px;height: 18px;
+background-color: #fff;font-size: 10px;font-weight: bold;
+border: 1.5px solid #5e2bb8;
+border-radius: 4px 0 4px 4px;
+line-height: 18px;text-align: center;
+color: #5e2bb8;margin-right: 5px;}
+.list_box>p:nth-child(2){font-size: 12px;}
+
+
+.middle_right{display: flex;width: 150px;height: 120px;
+font-size: 11px;justify-content: space-between;
+text-align: center;align-items: center;}
+.middle_right>ul>li:nth-child(1){margin-bottom: 30px;}
+
+.bottom_wrap{width: 100%;border-bottom: 2px solid black;}
+.h_bottom{width: 1200px;margin: 0 auto;height: 57px;
+display: flex;justify-content: space-between;align-items: center;font-size: 13px;}
+.btn_button{width: 137px;height: 57px;border: 1px solid #ddd;
+text-align: center;line-height: 57px;}
+.btn_wrap{display: flex;}
+.nav{display: flex;line-height: 57px;}
+.nav>li{padding-left: 25px;}
+.news_box>span{padding-left: 15px;}

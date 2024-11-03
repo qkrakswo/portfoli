@@ -182,10 +182,13 @@ text-align: center;}
             .coffee_Rbutton{width: 50px;height: 25px;border: 1px solid black;
                     background-color: palevioletred;border-radius: 10%;font-weight: bold;}
             .coffee_Rbutton:hover{color: black;background-color: #fff;}
-            .question_Lbutton{width: 50px;height: 25px;border: 1px solid black;
-                               border-radius: 10%;font-weight: bold;}
+            /* .question_Lbutton{width: 50px;height: 25px;border: 1px solid black;
+                               border-radius: 10%;font-weight: bold;} */
             .question_Rbutton{width: 50px;height: 25px;border: 1px solid black;
-                                border-radius: 10%;font-weight: bold;}
+                                border-radius: 10%;font-weight: bold;
+                            background-color: #fff;color: black;}
+            .question_Rbutton:hover{color: #fff;background-color: skyblue;}
+            .que_pc_txt .button{margin: 50px auto 0;width: 50px;height: 25px;}               
         /*버튼작업끝*/
         .px_img_01{position: absolute;bottom: 0;right: 0;
             animation: goleft 10s infinite;
@@ -517,7 +520,8 @@ text-align: center;}
         .que_pc_txt{position: absolute;top: 0;left: 0;
         background-color: black;text-align: center;
         width: 500px;height: 800px;display: flex;flex-direction: column;
-        justify-content: center;opacity: 0.8;color: #fff;}
+        justify-content: center;opacity: 0;color: #fff;}
+        .question_pc:hover .que_pc_txt{opacity: 0.8;transition:0.5s;}
 
         .only_pc_img01{position: absolute;bottom: 0;right: 0;
         width: 130px;height: 80px;
