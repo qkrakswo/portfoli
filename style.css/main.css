@@ -2,7 +2,7 @@
 /*h4*/
 h4{font-family: "Galmuri11", sans-serif;font-size: 14px;}
 main{width: 100%;height: 80vh;
-padding-bottom: 80px;border-bottom: 1px solid black;
+padding-bottom: 80px;
 text-align: center;
 }
 section{
@@ -50,7 +50,7 @@ animation: circlemove02 2s infinite;}
 animation: jump 1s infinite;}
 .px_img>img{width: 50px;height: 50px;}
 .px_box_img{position: absolute;bottom: 0;right: 20%;}
-.px_box_img>img{width: 50px;height: 100px;}
+.px_box_img>img{width: 40px;height: 80px;}
 @keyframes jump{
     0%{bottom: 0px;}
     100%{top: 80%;}
@@ -378,7 +378,8 @@ text-align: center;}
     .m-5{width: 33%;}
     .m-5>img{width: 100%;}
     .px_img>img{width: 100px;height: 100px;}
-    .px_box_img>img{width: 80px;height: 170px;}
+    .px_box_img{display: none;}
+    
 
     /*pc만 등장 시작*/
     .main_content_pc{display: none;}
@@ -469,7 +470,8 @@ text-align: center;}
     .m-3{width: 10%;}
     .m-4{width: 15%;}
     .m-5{width: 15%;}
-    .px_box_img>img{width: 120px;height: 230px;}
+    .px_box_img>img{width: 90px;height: 180px;}
+    .px_box_img{display: block;}
 
 
     /*pc만 등장 시작*/
