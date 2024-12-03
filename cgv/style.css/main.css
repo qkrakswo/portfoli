@@ -1,0 +1,934 @@
+@charset "utf-8";
+
+/*video*/
+main {
+    width: 100%;
+    height: auto;
+}
+
+.v_mp3 {
+    width: 100%;
+    height: 498px;
+    background-color: black;
+}
+
+.v_wrap {
+    width: 980px;
+    height: 498px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.v_wrap>video {
+    width: 980px;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.bg_linear {
+    width: 980px;
+    height: 498px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.25) 75%, #000 100%)
+}
+
+.explain_box>p:first-child {
+    position: absolute;
+    top: 170px;
+    left: 0;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    line-height: 1.450em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.72);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.explain_box>p:nth-child(2) {
+    overflow: hidden;
+    position: absolute;
+    top: 239px;
+    left: 0;
+    max-width: 100%;
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.450em;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.button_wrap {
+    width: 300px;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 315px;
+    left: 3px;
+    z-index: 4;
+    align-items: center;
+}
+
+.detail_button {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-left: 15px;
+    width: 100px;
+    height: 30px;
+    color: 343434;
+    font-size: 14px;
+    background-image: url(../main_image/arrowR_8x13.png);
+    background-repeat: no-repeat;
+    background-position: right 13px top 50%;
+    background-size: 8px 13px;
+    border-radius: 15px;
+    line-height: 30px;
+
+}
+
+.p_controler {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    margin-left: 10px;
+}
+
+.play {
+    display: none;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #979797;
+    border-radius: 50%;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.play>img {
+    width: 100%;
+    height: 100%;
+}
+
+.stop {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #979797;
+    border-radius: 50%;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.stop>img {
+    width: 100%;
+    height: 100%;
+}
+
+.m_controler {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    margin-left: 10px;
+}
+
+.sound {
+    display: none;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #979797;
+    border-radius: 50%;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sound>img {
+    width: 100%;
+    height: 100%;
+}
+
+.no_sound {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #979797;
+    border-radius: 50%;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.no_sound>img {
+    width: 100%;
+    height: 100%;
+}
+
+/*영상 코드 끝*/
+
+/*스와이퍼*/
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.swiper-wrapper {
+    counter-reset: num;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7%;
+}
+
+.swiper-wrapper .swiper-slide::after {
+    content: counter(num);
+    counter-increment: num;
+    position: absolute;
+    left: 12px;
+    bottom: 65px;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: italic;
+    color: #fff;
+    line-height: 1em;
+    z-index: 3;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.45);
+}
+
+/*스와이퍼 본인 수정 코드*/
+.swiper_content {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(232, 232, 232, 0.37))
+}
+
+.swiper_hole_wrap {
+    width: 980px;
+    height: 300px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.swiper-button-next::before {
+    background-image: url(../main_image/arrowR_8x13.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-size: 9px 13px;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+    content: '';
+    margin-left: -20px;
+    margin-right: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.swiper-button-next:after {
+    display: none;
+}
+
+.swiper-button-prev:after {
+    display: none;
+}
+
+.swiper-button-prev::before {
+    background-image: url(../main_image/arrowR_8x13.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-size: 9px 13px;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+    content: '';
+    margin-left: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    rotate: 180deg;
+    position: absolute;
+    z-index: 99;
+}
+
+.tab_wrap {
+    font-weight: 400;
+    font-size: 24px;
+    color: #666;
+    line-height: 1.423em;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.movie_chart {
+    font-weight: bold;
+    color: #222;
+    margin-right: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.movie_chart::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 110px;
+    top: 50%;
+    width: 1px;
+    height: 14px;
+    margin-top: -7px;
+}
+
+.planned_movie {
+    cursor: pointer;
+}
+
+.tab_wrap>button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../main_image/arrowR_8x13.png);
+    background-repeat: no-repeat;
+    background-position: right 5px top 50%;
+    background-size: 8px 13px;
+    font-size: 14px;
+    padding: 4px 32px 4px 15px;
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
+    background-color: inherit;
+}
+
+.movie_info .m_title {
+    overflow: hidden;
+    margin-top: 14px;
+    font-size: 18px;
+    color: #222;
+    line-height: 1.167em;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.movie_info .m_percent {
+    margin-top: 9px;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.214em;
+}
+
+.movie_info .m_percent>img {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.movie_info .m_reservation {
+    margin-top: 9px;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.214em;
+}
+
+.position_wrap {
+    width: 980px;
+    height: auto;
+    position: relative;
+}
+
+.first_swiper {
+    width: 980px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.second_swiper {
+    width: 980px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/*event_content*/
+.event_content {
+    width: 100%;
+    height: auto;
+}
+
+.event_wrap {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+    padding: 60px 0 6px;
+}
+
+.event_header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.event_header>p {
+    font-size: 26px;
+    color: #222222;
+    font-weight: bold;
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+}
+
+.header_right>a {
+    display: block;
+    width: 28px;
+    height: 28px;
+    font-size: 0;
+    background-image: url(../main_image/play_dark.png);
+    background-size: 11px 15px;
+    background-repeat: no-repeat;
+    background-position: left 60% top 50%;
+    border: 1px solid #e3e3e3;
+    border-radius: 50%;
+    margin-right: 5px;
+
+}
+
+.header_right>button {
+    padding: 4px 32px 4px 15px;
+    font-size: 14px;
+    color: #222;
+    line-height: 1.429em;
+    background: transparent url(../main_image/arrowR_8x13.png) calc(100% - 7px) center / 8px 13px scroll no-repeat;
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.event_img_wrap {
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.event_img {
+    width: auto;
+    height: auto;
+    margin-right: 30px;
+}
+
+.event_img>a .benner {
+    width: 310px;
+    height: 207px;
+    overflow: hidden;
+}
+
+.benner {
+    border-radius: 15px;
+}
+
+.benner>img {
+    width: 100%;
+    height: 100%;
+}
+
+.benner>img:hover {
+    scale: 1.1;
+    transition: 1s;
+}
+
+.event_img>a>strong {
+    display: block;
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #222;
+}
+
+.event_img>a>span {
+    display: block;
+    margin-top: 4px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.429em;
+}
+
+/*event_content 끝*/
+
+/*special_movie 시작*/
+.special_movie {
+    width: 100%;
+    height: auto;
+    padding: 60px 0 20px;
+}
+
+.special_wrap {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.special_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.special_header>p {
+    font-weight: 700;
+    font-size: 26px;
+    color: #222;
+}
+
+.special_header>button {
+    padding: 4px 32px 4px 15px;
+    font-size: 14px;
+    color: #222;
+    line-height: 1.429em;
+    background: transparent url(../main_image/arrowR_8x13.png) calc(100% - 7px) center / 8px 13px scroll no-repeat;
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.s_switch_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    height: auto;
+}
+
+.switch_imgbox {
+    width: 500px;
+    height: auto;
+    position: relative;
+}
+
+.switch_imgbox>img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.choice_box {
+    width: 438px;
+    height: auto;
+
+}
+
+.choice_box>a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 25px 19px 19px;
+    border-top: 1px solid #eee;
+}
+
+.choice_box>a:first-child {
+    border-radius: 10px;
+    border: 1px solid #222;
+}
+
+.choice_box>a:first-child>p:first-child {
+    font-weight: bold;
+}
+
+
+.choice_box>a>p:first-child {
+    font-weight: 400;
+    font-size: 18px;
+    color: #222;
+}
+
+.choice_box>a>p:last-child {
+    padding: 2px 7px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.429em;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+}
+
+/*special_movie 끝*/
+
+/*sale_product시작*/
+.sale_product {
+    width: 100%;
+    height: auto;
+}
+
+.sale_wrap {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.snack {
+    width: 310px;
+    padding: 20px 19px 0;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.snack>a {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.snack>a:last-child {
+    padding-bottom: 20px;
+}
+
+.snack>a>img {
+    width: 75px;
+    height: 76px;
+}
+
+.product_info {
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.product_name {
+    font-weight: 500;
+    font-size: 14px;
+    color: #222;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 16px;
+    color: #222;
+}
+
+.ticket {
+    width: 310px;
+    padding: 20px 19px 0;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.ticket>a {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.ticket>a:last-child {
+    padding-bottom: 0px;
+}
+
+.ticket>a>img {
+    width: 75px;
+    height: 76px;
+}
+
+.gift_card {
+    width: 310px;
+    padding: 20px 19px 0px;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+}
+
+.gift_card>a {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.gift_card>a:last-child {
+    padding-bottom: 0px;
+}
+
+.gift_card>a>img {
+    width: 75px;
+    height: 76px;
+}
+
+.product_title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.product_title>button {
+    padding: 2px 15px 3px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.417em;
+    border: 1px solid #f4f4f4;
+    border-radius: 11px;
+    background-color: transparent;
+}
+
+/*sale_product끝*/
+
+/*announcement섹션 시작*/
+.announcement {
+    width: 100%;
+    height: auto;
+}
+
+.announce_wrap {
+    width: 980px;
+    height: auto;
+
+    margin: 50px auto 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.notice {
+    width: auto;
+    height: auto;
+    border: 1px solid #e4e4e4;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice_left {
+    width: auto;
+    padding: 24px 26px 20px 30px;
+
+}
+
+.notice_right {
+    display: flex;
+    flex-direction: column;
+    width: 222px;
+    text-align: center;
+    border-left: 1px solid #e4e4e4;
+}
+
+.notice_right>strong {
+    display: block;
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.500em;
+}
+
+.notice_right>span {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #222;
+    line-height: 1.250em;
+}
+
+.notice_right>img {
+    width: 60px;
+    height: 60px;
+    margin: 20px auto 20px;
+}
+
+.notice_right>p {
+    font-size: 12px;
+    color: #666;
+    letter-spacing: -0.030em;
+    line-height: 1.417em;
+}
+
+.notice_top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 21px;
+}
+
+.notice_top>strong {
+    font-weight: 500;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.500em;
+}
+
+.notice_top>a:nth-child(2) {
+    overflow: hidden;
+    max-width: 300px;
+    margin-top: 2px;
+    margin-left: 28px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #222;
+    line-height: 1.429em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.plus {
+    padding: 2px 15px 3px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.417em;
+    border: 1px solid #f4f4f4;
+    border-radius: 11px;
+}
+
+.notice_bottom {
+    padding: 19px 0 22px;
+    font-size: 13px;
+    color: #666666;
+    display: flex;
+}
+
+.notice_bottom>strong {
+    font-weight: 500;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.500em;
+}
+
+.customer_center {
+    padding-left: 28px;
+}
+
+.customer_center>p:nth-child(2) {
+    font-size: 14px;
+    color: #222;
+    line-height: 1.714em;
+}
+
+.customer_center>p:nth-child(3) {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.714em;
+}
+
+.tel {
+    font-weight: 700;
+    font-size: 14px;
+    color: #222;
+    line-height: 1.714em;
+}
+
+.btn_wrap {
+    width: auto;
+    height: auto;
+}
+
+.btn_wrap>a {
+    padding: 7px 14px;
+    font-size: 14px;
+    color: #222;
+    line-height: 1.429em;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+}
+
+.commercial {
+    width: 211px;
+    height: 238px;
+}
+
+.commercial>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/*announcement섹션 끝*/
+
+/*footer 시작*/
+footer {
+    width: 100%;
+    height: auto;
+}
+
+.f_wrap {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.f_top {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 23px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.f_top>a {
+    font-weight: 500;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.462em;
+    padding-right: 10px;
+}
+
+.f_top>a:hover {
+    text-decoration: underline;
+}
+
+.f_top>a:nth-child(8) {
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+}
+
+.f_bottom {
+    padding: 23px 0;
+}
+
+.f_bottom>address {
+    font-size: 12px;
+    color: #666;
+}
+
+.company_info {
+    display: flex;
+    font-size: 12px;
+    color: #666;
+}
+
+.company_info>dd {
+    padding-right: 15px;
+}
+
+.company_info>dd:last-child>a {
+    text-decoration: underline;
+}
+
+.f_bottom>p {
+    font-size: 12px;
+    color: #666;
+}
