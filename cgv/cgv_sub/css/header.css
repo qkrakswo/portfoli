@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+.tiny_cm {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
+.tiny_cm>a>img {
+    width: 980px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.h_wrap {
+    width: 100%;
+    height: auto;
+    padding: 30px 0 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.m_wrap {
+    width: 990px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.m_left>span {
+    font-weight: 300;
+    letter-spacing: 0.313em;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.500em;
+}
+
+.m_left>a>img {
+    width: 117px;
+    height: 53px;
+}
+
+.m_left>span {
+    font-size: 16px;
+    color: #222222;
+}
+
+.m_right>a>img {
+    width: 36px;
+
+    height: 36px;
+}
+
+.m_right>a:nth-child(1)>img {
+    width: 136px;
+    height: 39px;
+}
+
+.m_right {
+    font-size: 13px;
+    color: #666666;
+    display: flex;
+    width: 456px;
+    height: 57px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+/*h_wrap끝*/
+
+/*nav시작*/
+.nav_line {
+    width: 100%;
+    height: auto;
+    border-bottom: solid 2px #fb4357;
+    position: relative;
+}
+
+.nav_wrap {
+    width: 990px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 50px;
+    font-size: 16px;
+    color: #222;
+    font-weight: 500;
+}
+
+.w_logo {
+    width: 70px;
+    height: 32px;
+    display: none;
+}
+
+.w_logo>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.nav {
+    display: flex;
+    width: 460px;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.nav>li:nth-child(3) {
+    color: #fb4357;
+    font-weight: bold;
+}
+
+.search_box {
+    width: auto;
+    height: auto;
+    display: flex;
+    border-right: 1px solid #cacaca;
+    border-left: 1px solid #cacaca;
+}
+
+.search_box>input {
+    width: 187px;
+    height: 24px;
+    margin-left: 10px;
+    border-width: 0;
+}
+
+.search_box .b_search {
+    margin-right: 10px;
+}
+
+.search_box .b_search>img {
+    width: 26px;
+    height: 26px;
+    display: block;
+}
+
+.search_box .w_search {
+    margin-right: 10px;
+    display: none;
+}
+
+.search_box .w_search>img {
+    width: 26px;
+    height: 26px;
+    display: block;
+}
+
+
+.nav_bg {
+    width: 100%;
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background-color: white;
+    bottom: auto;
+    left: 0;
+    border-bottom: 1px solid #444;
+}
+
+
+.nav_s_wrap {
+    display: flex;
+    width: 990px;
+    height: auto;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.nav_sub {
+    border-right: 1px solid #cacaca;
+    width: 161px;
+    font-size: 14px;
+    color: #222;
+    padding: 18px 30px 18px;
+}
+
+.nav_sub:nth-child(3) {
+    width: auto;
+}
+
+.nav_sub>li {
+    padding-top: 10px;
+}
+
+.nav_sub>li:first-child {
+    padding-top: 0px;
+    font-size: 14px;
+    color: #222;
+    font-weight: bold;
+}
+
+.nav_s_wrap .nav_sub:first-child {
+    width: 137px;
+    padding: 18px 30px 18px 0px;
+}
+
+.nav_s_wrap .nav_sub:last-child {
+    width: 195px;
+}
+
+/*addclass(on) 헤더색 변경 시작*/
+.nav_line.on {
+    background-image: linear-gradient(to right, rgb(215, 67, 87), rgb(241, 79, 58) 59%, rgb(239, 100, 47));
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    bottom: auto;
+}
+
+.nav_line.on .nav_wrap {
+    height: 60px;
+}
+
+.nav_line.on .nav_wrap .nav {
+    margin-right: 150px;
+    line-height: 60px;
+    height: auto;
+}
+
+.nav_line.on .nav_wrap .nav>li {
+    color: #fff;
+}
+
+.nav_line.on .nav_wrap .search_box {
+    border-right: 1px solid #444;
+    border-left: 1px solid #444;
+}
+
+.nav_line.on .nav_wrap .w_logo {
+    display: block;
+}
+
+.nav_line.on .nav_wrap .search_box>input {
+    color: #fff;
+    background-color: transparent;
+}
+
+.nav_line.on .nav_wrap .search_box .b_search {
+    display: none;
+}
+
+.nav_line.on .nav_wrap .search_box .w_search {
+    display: block;
+}
