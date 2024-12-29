@@ -554,6 +554,9 @@ h1>span {
     background-color: palevioletred;
     border-radius: 10%;
     font-weight: bold;
+    margin-left: 40px;
+    /*새로 업로드 할때 마진 확인해야함*/
+
 }
 
 .coffee_Rbutton:hover {
@@ -1368,7 +1371,7 @@ h1>span {
 
     .main_content_pc {
         width: 100%;
-        height: auto;
+        height: 330vh;
         display: block;
         margin-bottom: 100px;
         border-bottom: 1px solid black;
